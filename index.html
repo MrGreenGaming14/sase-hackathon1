@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <div class = "wrapper">
+            <form class = "form2">
+
+                <div class = "input nobottomborder">
+                    <div class = "formtitle">
+                        <br>
+                        Username:
+                    </div>
+
+                    <div class = "inputcontent">
+                        <input type = "username" id = "username" /><br />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class = "wrapper">
+            <form class = "form1">
+
+                <div class = "input nobottomborder">
+                    <div class = "inputtext">
+                        <br>
+                        Password:
+                    </div>
+
+                    <div class = "inputcontent">
+                        <input type = "password" id = "password" /><br />
+                    </div>
+                </div>
+
+                <div class = "buttons">
+                    <br>
+                    <input class = "orangebutton" type = "button" value = "Login" onclick = "checkUserAndPass()" />
+                </div>
+            </form>
+        </div>
+
+       <script>
+
+      function checkUserAndPass(){
+       if(document.getElementById('password').value == 'GeauxHack2022!' && document.getElementById('username').value == "OS-hit!"){
+          location.href = "http://google.com";
+         } else {
+         alert('Wrong Username or Password!');
+          return false;
+        }
+       }
+      </script>
+    </head>
+    
+</html>
