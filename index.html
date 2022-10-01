@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        div.wrapper {
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 20%;
+            right: 50%
+        }
+
+        div.inputcontent {
+            border-radius: 110px;
+        }
+
+        body {
+            background-color: tan;
+        }
+
+      </style>
+
     <head>
-        
-        <div class = "wrapper">
-            <form class = "form2">
-
-                <div class = "input nobottomborder">
-                    <div class = "formtitle">
+        <body>
+            <div class = "wrapper">
+                <form class = "form">
+    
+                    <div class = "inputUser">
+                        <div class = "inputtext">
+                            <br>
+                            Username:
+                        </div>
+    
+                        <div class = "inputcontent">
+                            <input type = "username" id = "username" /><br />
+                            <br>
+                            Password:
+                        </div>
+    
+                        <div class = "inputcontent">
+                            <input type = "password" id = "password" /><br />
+                        </div>
+                    </div>
+    
+                    <div class = "buttons">
                         <br>
-                        Username:
+                        <input class = "orangebutton" type = "button" value = "Login" onclick = "checkUserAndPass()" />
                     </div>
-
-                    <div class = "inputcontent">
-                        <input type = "username" id = "username" /><br />
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <div class = "wrapper">
-            <form class = "form1">
-
-                <div class = "input nobottomborder">
-                    <div class = "inputtext">
-                        <br>
-                        Password:
-                    </div>
-
-                    <div class = "inputcontent">
-                        <input type = "password" id = "password" /><br />
-                    </div>
-                </div>
-
-                <div class = "buttons">
-                    <br>
-                    <input class = "orangebutton" type = "button" value = "Login" onclick = "checkUserAndPass()" />
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+        </body>
 
        <script>
 
