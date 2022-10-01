@@ -3,10 +3,12 @@
     <style>
         div.wrapper {
             background-color: white;
-            border-radius: 0.01px;
+            border-radius: 1px;
             position: absolute;
             top: 20%;
             right: 50%
+            height: 100px;
+            width: 100px;
         }
 
         div.inputcontent {
@@ -53,7 +55,7 @@
 
       function checkUserAndPass(){
        if(document.getElementById('password').value == 'GeauxHack2022!' && document.getElementById('username').value == "OS-hit!"){
-          location.href = "http://google.com";
+          
          } else {
          alert('Wrong Username or Password!');
           return false;
