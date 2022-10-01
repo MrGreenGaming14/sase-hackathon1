@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+    <style>
+        body {
+            background-color: tan;
+        }
+    </style>
+<style>
+    .dropdown a:hover {background-color: #ddd;}
+</style>
+
+<style>
+.box{    
+  width: 330px;
+  background-color: lightgray;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+</style>
+<div class="box">
+</head>  
+<body>
+    <form>
+        <h2>Enter Salary:<br></h2>
+            <input type="text" name="salary" id="salary"><br>
+    </form>
+
+<script>
+    function checkSalary (){
+        var salary = document.getElementById('salary').value;
+        var WeeklySalary = Math.round((salary/52) * 100)/100;
+        
+        if(document.getElementById('Begin') == True){
+            savings = WeeklySalary - (WeeklySalary * 0.3);
+            bills = WeeklySalary - (WeeklySalary * 0.3);
+            fun = WeeklySalary - (WeeklySalary * 0.4);
+            alert(savings);
+        } else if(document.getElementById('Inter') == True){
+            savings = WeeklySalary - (WeeklySalary * 0.4);
+            bills = WeeklySalary - (WeeklySalary * 0.4);
+            fun = WeeklySalary - (WeeklySalary * 0.2);
+            alert(savings);
+        } else if(document.getElementById('End')){
+            savings = WeeklySalary - (WeeklySalary * 0.3);
+            bills = WeeklySalary - (WeeklySalary * 0.5);
+            fun = WeeklySalary - (WeeklySalary * 0.2);
+            alert(savings);
+        }
+    }        
+</script>   
+
+</body>
+
+<body>
+
+<style>
+    .dropbtn {
+      background-color: tan;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: rgb(101, 67, 22);
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: tan;}
+    
+    .show {display: block;}
+</style>
+
+<h2>Choose a Budget Plan:<br><br>
+
+<!--<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Budget Plan</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a onclick = "smth()">Beginner</a>
+      <a onclick = "smth2()">Intermediate</a>
+      <a onclick = "smth3()">Expert</a>
+    </div>
+  </div>
+-->
+
+<script>
+    function addOption(){
+        document.getElementById('usertype').value = "Select";
+    }  
+
+</script>
+
+<select id="usertype">
+    <option value="Select" disabled selected
+    id="myDefault">Select</option>
+    <option value="smth()" id = "Begin">Beginner</option>
+    <option value="smth2()" id = "Inter">Intermediate</option>
+    <option value="smth3()" id = "End">Advanced</option>
+  </select> 
+<button type="button" name="button"onclick="addOption()">Send</button> 
+
+
+
+
+
+<script>
+    /*
+    function smth(){
+        
+    }
+    function smth2(){
+        
+    }
+    function smth3(){
+        
+    }
+    
+
+    function myFunction(){
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event){
+        if (!event.target.matches('.dropbtn')){
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for(i = 0; i < dropdowns.length; i++){
+                var OpenDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')){
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+*/
+
+/* switch (id){
+    case 1:
+        
+        break;
+    case 2:
+       
+        break;
+    case 3:
+        
+        break;
+    default:
+        text: "Case Input Required";
+}
+*/
+</script>
+
+<p id="demo"></p>
+
+<input class = "orangebutton" type = "button" value = "Submit" onclick = "checkSalary()"/>
+
+
+</h2>
+
+<script>
+function checkInfo(){
+    alert(salary.value);
+}
+</script>
+
+</div>
+
+</body>
+</html>
+
